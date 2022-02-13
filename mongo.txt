@@ -1,0 +1,11 @@
+use ayush
+db.item.insertone({
+name: "samsung one", sold: 98, price 30000 })
+show dbs to show all database
+db.collections to show all inside db
+db.items.find() to see data
+db.items.find({price : 98}) to filter searching
+db.items.deleteOne({price : 98}) to delete one items whose price is 98
+db.items.deleteMany({price : 98}) to delete all items whose price is 98
+db.items.updateOne({name: "samsung 30s"}, {$set: {price: 2}}) to update one item whose nam eis samsung 30s and set it price to 2
+db.items.updatemany({name: "samsung 30s"}, {$set: {price: 2}}) to update many item whose nam eis samsung 30s and set it price to 2
